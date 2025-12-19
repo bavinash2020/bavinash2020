@@ -1,21 +1,35 @@
-import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { Home } from './pages/Home';
+import { Login } from './pages/Login';
+import { DriverDashboard } from './pages/DriverDashboard';
+import { DriverProfile } from './pages/driver/DriverProfile';
+import { DriverTrips } from './pages/driver/DriverTrips';
+import { OwnerDashboard } from './pages/OwnerDashboard';
+import { OwnerProfile } from './pages/owner/OwnerProfile';
+import { AdminDashboard } from './pages/admin/AdminDashboard';
+import { DriverEarnings } from './pages/driver/DriverEarnings';
 
 function App() {
   return (
-    <div className="container" style={{ padding: '2rem 0' }}>
-      <header style={{ marginBottom: '2rem' }}>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>Driver Connect</h1>
-        <p style={{ color: 'var(--text-secondary)' }}>Premium Long-Trip Driver Hiring</p>
-      </header>
-      
-      <main className="glass-panel" style={{ padding: '2rem', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <p>Welcome to the MVP. Select your role to get started.</p>
-        <div style={{ display: 'flex', gap: '1rem', marginLeft: '1rem' }}>
-           <button className="btn btn-primary">I am a Driver</button>
-           <button className="btn btn-secondary">I am an Owner</button>
-        </div>
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout><Home /></Layout>} />
+      <Route path="/login" element={<Layout><Login /></Layout>} />
+
+      {/* Driver Routes */}
+      <Route path="/driver-dashboard" element={<Layout userRole="driver"><DriverDashboard /></Layout>} />
+      <Route path="/driver/trips" element={<Layout userRole="driver"><DriverTrips /></Layout>} />
+      <Route path="/driver/profile" element={<Layout userRole="driver"><DriverProfile /></Layout>} />
+
+      <Route path="/driver/earnings" element={<Layout userRole="driver"><DriverEarnings /></Layout>} />
+
+      {/* Owner Routes */}
+      <Route path="/owner-dashboard" element={<Layout userRole="owner"><OwnerDashboard /></Layout>} />
+      <Route path="/owner/profile" element={<Layout userRole="owner"><OwnerProfile /></Layout>} />
+
+      {/* Admin Routes */}
+      <Route path="/admin/dashboard" element={<Layout userRole="admin"><AdminDashboard /></Layout>} />
+    </Routes>
   );
 }
 
