@@ -9,12 +9,15 @@ import { OwnerDashboard } from './pages/OwnerDashboard';
 import { OwnerProfile } from './pages/owner/OwnerProfile';
 import { AdminDashboard } from './pages/admin/AdminDashboard';
 import { DriverEarnings } from './pages/driver/DriverEarnings';
+import { Feedback } from './pages/Feedback';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout><Home /></Layout>} />
       <Route path="/login" element={<Layout><Login /></Layout>} />
+      <Route path="/feedback" element={<Layout><Feedback /></Layout>} />
+
 
       {/* Driver Routes */}
       <Route path="/driver-dashboard" element={<Layout userRole="driver"><DriverDashboard /></Layout>} />
