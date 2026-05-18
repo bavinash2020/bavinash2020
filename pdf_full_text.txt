@@ -1,0 +1,1453 @@
+A MINOR  PROJECT REPORT  
+On 
+ 
+" Food -oder -app-avi” 
+ 
+ 
+SUBMITTED IN THE  PARTIAL  FULFILLMENT  
+FOR THE AWARD OF THE DEGREE OF 
+MASTER OF COMPUTER APPLICATIONS  
+ 
+TO 
+ 
+BHABHA  ENGINEERING  RESEARCH  INSTITUTE -MCA  
+ 
+ 
+SUBMITTED  BY 
+ 
+Avinash  Kumar  
+“Enrollment  no: 09CA241MC047”  
+ 
+SESSION -2024 -2026  
+ 
+ 
+ 
+ 
+(PROJECT  GUIDE)  (H.O.D.)  (PRINCIPAL)  
+Dr. Gaurav Pandey  Dr. Gaurav Pandey  Dr. Deepa  Bakhshi  
+ 
+ 
+ 
+BHABHA  UNIVERSITY,  BHOPAL  (M.P.) BHABHAENGINEERINGRESEARCHINSTITUTE -MCA, 
+BHOPAL  
+MASTER  OF COMPUTER  APPLICATIONS  
+ 
+ 
+ 
+CERTIFICATE  
+ 
+This  is to certify  that Avinash  Kumar  of MCA  III Semester  is sincere 
+and has worked  under  my guidance  and completed the  project  timely  and 
+sincerely.  
+ 
+The project title, “ Food -oder -app-avi" is being fulfilled to the 
+requirement for the degree of “Master of Computer Application” (MCA) 
+prescribed by BHABHA UNIVERSITY, BHOPAL. They are found to be 
+persevering in their efforts and have displayed professional conduct in  
+their work. We wish them every success in their future.  
+ 
+ 
+ 
+Project  Guide  HOD  
+Dr. Gaurav Pandey  Dr. Gaurav Pandey  
+ 
+ 
+ 
+ 
+ 
+Principal  
+Dr. Deepa  Bakhshi  BHABHAENGINEERINGRESEARCHINSTITUTE -MCA,  BHOPAL  
+MASTER  OF COMPUTER  APPLICATIONS  
+ 
+DECLARATION  
+ 
+I am Avinash  Kumar student of  Master  of Computer Application, Bhabha Engineering 
+Research Institute -MCA, Bhopal hereby declare that the work presented in this  
+Major Project is outcome of my own work, and is  correct to the best of my 
+knowledge and this work has been carried out taking care of Eng ineering Ethics. The 
+work presented does not infringe any patented work and has not been submitted to 
+any University for the award of any degree or any professional diploma . 
+ 
+ 
+ 
+ 
+ 
+ 
+Avinash  Kumar  
+              Enrollment  No.09 CA241MC047  ACKNOWLEDGEMENT  
+ 
+ 
+ 
+At the outset, I express our deepest gratitude to Bhabha Engineering Research 
+Institute -MCA, Bhopal for providing me the dynamic opportunities and best 
+facilities to work.  
+ 
+I am grateful to my Principal Dr. Deepa Bakhshi HOD Dr. Gaurav Pandey & Project Guide 
+Dr.Gaurav Pandey under whose guidance we successfully completed our project. They 
+willingly took the trouble of sparing his valuable time for our project and were always 
+ready to help with his technical knowledge and valuable suggestions.  
+ 
+I will fail in my duties  if I don’t  acknowledge  the valuable  advice  received  from  my 
+teachers  in the institution  from  time  to time.  
+ 
+I also express our gratitude to all those who guided us helped us in preparation for this 
+project report.  
+ 
+Last,  but not least,  I am thankful  to fellow students who  encouraged  me by taking a  keen 
+interest in my project work.  
+Avinash Kumar 
+Enroll.No:02CA241 MC047  
+ 
+ 
+ 
+. INDEX  
+ 
+ 
+Sr.No.  Contents  Page  
+1 Introduction   
+2 System  Analysis   
+3 Literature  Survey   
+4 Software  Requirement  Specification   
+5 Software  Selection  Criteria   
+6 Project  Planning   
+7 Data  Flow  Diagram   
+8 ER Diagram   
+9 Data  Dictionary   
+10 Sample  Source  Code   
+11 Designing   
+12 User  Manual   
+13 Output  Screen   
+14 Output  Reports   
+15 Common  Errors  and Explanations   
+16 Limitations   
+17 Future  Enhancement/Conclusion   
+18 Bibliography   1. INTRODUCTION  
+Gourmet  Go is a premium  food ordering  web application  designed  to bring  a high-quality 
+user experience to online food delivery. The project aims to bridge the gap between 
+hungry customers and high -quality restaurants through a seamless, visually enhanced 
+digital interface.  
+The application primarily focuses on user experience, of fering a sleek, dark -themed 
+responsive  design  where  users  can browse  a categorized  menu,  add items  to a cart, and 
+proceed to checkout. It solves the common problem of clunky, slow, or unattractive food 
+ordering interfaces by utilizing modern web technologi es. 
+ 
+1.1 Purpose  
+ 
+The purpose  of this project  is to develop  a functional  prototype  of a food delivery  frontend 
+that demonstrates proficiency in modern web development standards (HTML5, CSS3, 
+JavaScript) and user interface design principles.  
+ 
+1.2 Scope  
+ 
+The scope  includes  the development  of the client -side interface,  including:  
+ 
+ Home  Page  with Hero  Section  
+ Interactive  Menu  with Categories  
+ Shopping Cart  Functionality  
+ User  Authentication  (Login/Signup  Simulation)  
+ Responsive  Design  for Mobile  and Desktop  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 2. SYSTEM  ANALYSIS  
+The system  is designed  as a Single  Page  Application  (SPA)  feel using  standard  multi -page 
+architecture. It relies on the client -side browser to hand le logic such as cart managemenand routing  between  pages.  
+ 
+2.1 Existing  System  
+ 
+Traditional food ordering often requires phone calls or visiting physical locations. Existing 
+web solutions  can sometimes  be cluttered.  This system  simplifies  the process  into a visual - 
+first approach.  
+2.2 Proposed  System  
+ 
+The proposed  system  automates  the selection  and calculation  process.  It provides  instant 
+visual feedback (animations, cart updates) and ensures data persistence using Local 
+Storage so users don't lose their cart if they refresh the page.  
+ 
+ 
+ 
+ 
+3. LITERA TURE SURVEY  
+A study of existing successful platforms like Zomato, Swiggy, and UberEats reveals that  
+User Interface (UI) and User Experience (UX) are critical for retention. Users prefer:  
+ Fast load times  
+ Clear  imagery  
+ Simple  checkout  flows  
+Gourmet Go incorporates these findings by implementing lazy loading (conceptual), 
+optimized CSS for fast rendering, and a "Cart Drawer" pattern popular in modern e - 
+commerce.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4. SOFTWARE  REQUIREMENT  SPECIFICATION  (SRS)  
+4.1 Functional  Requirements  
+ 
+ User  Registration/Login:  Users  must  be able to create  an account  and log in. 
+ Browse  Menu: Users  must  be able to filter food items  by category.  
+ Cart Management:  Add/Remove  items  and see total price.  4.2 Non-Functional  Requirements  
+ 
+ Performance:  The site should  load within  3 seconds.  
+ Reliability:  Cart data should  persist  across  sessions.  
+ Usability:  The interface  must  be intuitive  for non-technical  users.  
+ 
+4.3 Hardware Requirements  
+ 
+ Any standard  PC or Laptop  (i3 Processor  or above)  
+ 4GB RAM  minimum  
+ Internet  Connection  for hosting  
+ 
+4.4 Software  Requirements  
+ 
+ OS: Windows/Mac/Linux  
+ Browser:  Google  Chrome  / Firefox  / Safari  
+ Development  Tools: VS Code,  Git 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5. SOFTWARE  SELECTION  CRITERIA  
+The technology  stack  was chosen  for its ubiquity  and performance:  
+ HTML5:  For semantic  structure.  
+ CSS3:  For styling,  animations,  and responsive  layout  without  heavy  frameworks.  
+ JavaScript  (ES6+): For logic and DOM  manipulation.  
+ 
+6. PROJECT  PLANNING  
+The project  was executed  in the following  phases:  
+1. Requirement  Gathering:  Understanding  what  features  are needed.  2. Design  Phase:  Creating  the UI/UX  mockups  and color  palette  selection.  
+3. Implementation:  Coding  the HTML  structure,  then CSS styling,  then JS logic.  
+4. Testing:  Verifying  functionality  across  devices.  
+5. Deployment:  Hosting  the application  on GitHub  Pages.  
+ 
+ 
+7. DATA  FLOW  DIAGRAM  (DFD)  
+Level  0 DFD:  
+User  <-> [Food  Ordering  System]  <-> Admin  
+Level  1 DFD (User Flow):  
+ User  -> Log In -> Verify  Credentials -> Access  System
+ User  -> Select  Items  -> Add to Cart -> Update Total
+ User  -> Checkout  -> Confirm  Order -> Generate  Receipt
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8. ER DIAGRAM  
+The application  uses  a simple  data model  focused  on Users  and Orders.  
+ USER:  UserID,  Name,  Email,  Password,  Mobile
+ PRODUCT:  ProductID,  Name,  Price,  Category,  Image
+ ORDER:  OrderID,  UserID,  Total  Amount,  Status 
+ 
+ 
+9. DATA  DICTIONARY  
+ 
+Field  Name  Data  Type  Description  
+username  String  Name  of the user 
+password  String  Encrypted  password  string  
+email  String  Unique  email  identifier  
+mobile  Number  (10) User  contact  number  
+cart items  Array  List of product  objects  in cart 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- Hero  Section  --> 
+<header  id="home " class ="hero "> 
+<div class ="container  hero -content "> 
+<div class ="hero -text"> 
+<h1>Taste  the <span  class ="gradient -text">Extraordinary </span ></h1> 
+<p>Experience  premium  dining  delivered  straight  to your  doorstep.  Fresh  ingredients,  exquisite  flavors,  
+and lightning -fast delivery. </p> 
+<a href ="#menu " class ="btn btn-primary ">Order  Now </a> 
+</div> 
+<div class ="hero -image "> 10. SAMPLE SOURCE CODE  
+index.html  (Hero  & Menu  Structure)  
+ <div class ="circle -bg"></div> 
+<!-- Placeholder  for dynamic  food  image  --> 
+<img src="./images/hero.png " alt="Delicious  Food " class ="floating -img"> 
+</div> 
+</div> 
+</header > 
+ 
+<!-- Menu  Section  --> 
+<section  id="menu " class ="menu -section "> 
+<div class ="container "> 
+<h2 class ="section -title ">Our <span  class ="highlight ">Menu </span ></h2> 
+<div class ="categories "> 
+<button  class ="cat-btn active " data -category ="all">All</button > 
+<button  class ="cat-btn" data -category ="burger ">Burgers </button > 
+<button  class ="cat-btn" data -category ="pizza ">Pizza </button > 
+<button  class ="cat-btn" data -category ="indian ">Indian </button > 
+<button  class ="cat-btn" data -category ="chinese ">Chinese </button > 
+<button  class ="cat-btn" data -category ="sushi ">Sushi </button > 
+<button  class ="cat-btn" data -category ="dessert ">Dessert </button > 
+</div> 
+<div id="menu -grid " class ="menu -grid "> 
+<!-- Menu  items will  be injected  here  by JS  --> 
+</div> 
+</div> 
+</section > 
+ 
+<!-- Cart  Sidebar  --> 
+<div id="cart -sidebar " class ="cart -sidebar "> 
+<div class ="cart -header "> 
+<h3>Your  Cart </h3> 
+<button  class ="close -cart " onclick ="toggleCart ()"><i class ="fa-solid  fa-xmark "></i></button > 
+</div> 
+<div id="cart -items " class ="cart -items "> 
+<!-- Cart  items  injected  here  --> 
+<div class ="empty -cart -msg ">Your  cart  is empty. </div> 
+</div> 
+<div class ="cart -footer "> 
+<div class ="total "> 
+<span >Total: </span > 
+<span  id="cart -total ">$0.00 </span > 
+</div> 
+<button  class ="btn btn-primary  btn-block " onclick ="checkout ()">Checkout </button > 
+</div> 
+</div> 
+<div id="overlay " class ="overlay " onclick ="toggleCart ()"></div> 
+ 
+<!-- Footer  Section  --> 
+<footer  class ="footer "> 
+<div class ="container "> 
+<div class ="footer -grid "> 
+<div class ="footer -about "> 
+<a href ="index.html " class ="logo  footer -logo ">Gourmet <span  class ="highlight ">Go</span >.</a> 
+<p>Elevating  your  dining  experience  with  premium  flavors  delivered  with  speed  and care.  Taste  the 
+extraordinary every day. </p> 
+<div class ="footer -socials "> 
+<a href ="#"><i class ="fa-brands  fa-facebook -f"></i></a> 
+<a href ="#"><i class ="fa-brands  fa-twitter "></i></a> 
+<a href ="#"><i class ="fa-brands  fa-instagram "></i></a> // Auth  Logic  
+const  authForm  = document .getElementById ('auth -form '); 
+const authTitle = document .getElementById ('auth -title '); 
+const  authSubtitle  = document .getElementById ('auth -subtitle '); 
+const submitBtn = document .getElementById ('submit -btn'); 
+const footerText = document .getElementById ('footer -text'); 
+const footerLink = document .getElementById ('footer -link'); 
+const nameField = document .getElementById ('name -field '); 
+const mobileField = document .getElementById ('mobile -field '); 
+const idLabel = document .getElementById ('id-label '); 
+const idIcon = document .getElementById ('id-icon '); 
+const  userIdInput  = document .getElementById ('user -id'); 
+const  userMobileInput  = document .getElementById ('user -mobile '); 
+const errorBox = document .getElementById ('error -box');  
+auth.js  (Login  Validation  Logic)  
+ 
+<a href ="#"><i class ="fa-brands  fa-linkedin -in"></i></a> 
+<a href ="#"><i class ="fa-brands  fa-youtube "></i></a> 
+</div> 
+</div> 
+<div class ="footer -links "> 
+<h3>Quick  Links </h3> 
+<ul> 
+<li><a href="index.html ">Home </a></li> 
+<li><a href ="index.html#menu ">Our Menu </a></li> 
+<li><a href ="about.html ">About  Us</a></li> 
+<li><a href="contact.html ">Contact </a></li> 
+</ul> 
+</div> 
+<div class ="footer -links "> 
+<h3>Support </h3> 
+<ul> 
+<li><a href="faq.html ">FAQ </a></li> 
+<li><a href ="privacy.html ">Privacy  Policy </a></li> 
+<li><a href ="terms.html ">Terms  of Service </a></li> 
+<li><a href ="shipping.html ">Shipping  Policy </a></li> 
+</ul> 
+</div> 
+<div class ="footer -links "> 
+<h3>Contact  Us</h3> 
+<ul> 
+<li><a href ="#"><i class ="fa-solid  fa-location -dot" 
+style ="margin -right:  10px;  color:  var( --primary); "></i> 123  Gourmet  St, Food  
+City</a></li> 
+<li><a href ="mailto:hello@gourmetgo.com"><i  class ="fa-solid  fa-envelope " 
+style ="margin -right:  10px;  color:  var( --primary); "></i> hello@gourmetgo.com</ a></li > 
+<li><a href ="tel:+15551234567 "><i class ="fa-solid  fa-phone " 
+style ="margin -right:  10px;  color:  var( --primary); "></i> +1 (555)  123 -4567 </a></li> 
+</ul> 
+</div> 
+</div> 
+<div class ="footer -bottom "> 
+<p>&copy;  2024  Gourmet  Go. All rights  reserved.  Elevating  Delivery. </p> 
+</div> 
+</div> 
+</footer > let currentTab  = 'login '; 
+ 
+function  switchTab (tab) { 
+currentTab = tab; 
+const  tabs  = document .querySelectorAll ('.auth -tab'); 
+errorBox .style .display = 'none '; 
+ 
+if (tab === ' login ') { 
+tabs [0].classList .add ('active '); 
+tabs [1].classList .remove ('active '); 
+authTitle .innerText  = 'Welcome  Back! '; 
+authSubtitle .innerText  = 'Order  your  favorite  meals  in seconds. '; 
+submitBtn .innerText = 'Login '; 
+footerText .innerText  = "Don't  have  an account? "; 
+footerLink .innerText = 'Sign Up now '; 
+footerLink .onclick = () => switchTab ('signup '); 
+ 
+nameField .style .display = 'none '; 
+mobileField .style .display = 'none '; 
+idLabel .innerText  = 'Email  or Mobile  Number '; 
+idIcon .className = 'fa-solid fa -envelope '; 
+userIdInput .placeholder  = 'email@example.com  or 9876543210 '; 
+ 
+document .getElementById ('user -name ').required  = false ; 
+userMobileInput .required = false ; 
+} else { 
+tabs [1].classList .add ('active '); 
+tabs [0].classList .remove ('active '); 
+authTitle .innerText  = 'Create  Account '; 
+authSubtitle .innerText  = 'Join  us for a premium  dining  experience. '; 
+submitBtn .innerText = 'Sign Up '; 
+footerText .innerText  = "Already  have  an account? "; 
+footerLink .innerText = 'Login instead '; 
+footerLink .onclick = () => switchTab ('login '); 
+ 
+nameField .style .display = 'block '; 
+mobileField .style .display = 'block '; 
+idLabel .innerText = 'Email Address '; 
+idIcon .className = 'fa-solid fa -envelope '; 
+userIdInput .placeholder  = 'email@example.com '; 
+ 
+document .getElementById ('user -name ').required  = true ; 
+userMobileInput .required = true ; 
+} 
+} 
+ 
+authForm .addEventListener ('submit ', (e) => { 
+e.preventDefault (); 
+ 
+const  userId  = userIdInput .value .trim (); 
+const userPass = document .getElementById ('user -password ').value ; 
+const  userName  = document .getElementById ('user -name ').value .trim (); 
+const userMobile = userMobileInput .value .trim (); 
+ 
+errorBox .style .display  = 'none '; if (currentTab  ===  'signup ') { 
+// 1. Name  Validation  (Text  only  - letters  and spaces)  
+const  nameRegex  = /^[a-zA-Z\s]+$/; 
+if (!nameRegex .test (userName )) { 
+showError ('Full Name  should  contain  letters  only. '); 
+return ; 
+} 
+ 
+// 2. Mobile  Validation  (Exactly  10 digits)  
+const  mobileRegex  = /^\d{10} $/; 
+if (!mobileRegex .test (userMobile )) { 
+showError ('Please  enter  a valid  10-digit  mobile  number. '); 
+return ; 
+} 
+ 
+// 3. Email  Validation  (Standard  format)  
+const  emailRegex  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+if (!emailRegex .test (userId )) { 
+showError ('Please  enter  a valid  email  address. '); 
+return ; 
+} 
+ 
+// 4. Password Validation  
+const  passRegex  = /^(?=.*[a-z])(?= .*[A-Z])(?= .*\d)(?= .*[@$!%*?& ])[A-Za-z\d@$!%*?& ]{8,} $/; 
+if (!passRegex .test (userPass )) { 
+showError ('Password  must  be at  least  8 characters  and include uppercase,  lowercase,  a number,  and a special  character. '); 
+return ; 
+} 
+ 
+const  users  = JSON .parse (localStorage .getItem ('gourmet_users ') || '[]'); 
+ 
+// Check  if user  already  exists  
+if (users .find (u => u.id ===  userId  || u.mobile  ===  userMobile )) { 
+showError ('User with this email or mobile already exists. '); 
+return ; 
+} 
+ 
+const  newUser  = { 
+id: userId , 
+mobile : userMobile , 
+password : userPass , 
+name : userName  
+}; 
+ 
+users .push (newUser ); 
+localStorage .setItem ('gourmet_users ', JSON .stringify (users )); 
+localStorage .setItem ('gourmet_current_user ', JSON .stringify (newUser )); 
+ 
+// Success  redirect  
+redirectBack (); 
+} else  { 
+// Login  logic  
+const  users  = JSON .parse (localStorage .getItem ('gourmet_users ') || '[]'); 
+// Allow  login  via email or  mobile  
+const  user = users .find (u => (u.id ===  userId  || u.mobile  ===  userId ) && u.password === userPass ); 
+ 
+if (user ) { :root { 
+--primary : #ff4757 ; 
+--primary -hover : #e8414e ; 
+--secondary : #2f3542 ; 
+--bg-dark : #1e1e2e ; 
+--bg-card : #252538 ; 
+--text-white : #ffffff ; 
+--text-gray : #a4b0be ; 
+--glass : rgba (255 , 255 , 255 , 0.05 ); 
+--border -glass : rgba (255 , 255 , 255 , 0.1); 
+--shadow : 0 10px 30px rgba (0, 0, 0, 0.3); 
+--font -main : 'Outfit ', sans -serif ; 
+--transition : all 0.3s ease ; 
+} 
+ 
+html  { 
+scroll -behavior : smooth ; 
+} 
+ 
+* { 
+margin : 0; 
+padding : 0; 
+box-sizing : border -box; 
+font -family : var(--font -main ); 
+} 
+ 
+body  { 
+background -color : var(--bg-dark ); 
+color : var(--text-white ); 
+overflow -x: hidden ; 
+} 
+ 
+/* Layout  & Utils  */ 
+.container  {  
+ 
+styles.css  (Glassmorphism  & Theming)  
+ 
+localStorage .setItem ('gourmet_current_user ', JSON .stringify (user )); 
+redirectBack (); 
+} else  { 
+showError ('Invalid  credentials.  Please  try again. '); 
+} 
+} 
+}); 
+function showError (msg ) { 
+errorBox .innerText = msg ; 
+errorBox .style .display  = 'block '; 
+} 
+ 
+function  redirectBack () { 
+// Get redirect  URL  from  query  param  or default  to home  
+const  urlParams  = new  URLSearchParams (window .location .search ); 
+const redirect = urlParams .get('redirect ') || 'index.html '; 
+window .location .href = redirect ; 
+} max -width : 1200 px; 
+margin : 0 auto ; 
+padding : 0 20px; 
+} 
+ 
+.btn { 
+padding : 12px 30px; 
+border -radius : 50px; 
+border : none ; 
+cursor : pointer ; 
+font -weight : 600 ; 
+transition : var(--transition ); 
+text-decoration : none ; 
+display : inline -block ; 
+background : rgba (255 , 255 , 255 , 0.08 ); 
+backdrop -filter : blur (12px); 
+-webkit -backdrop -filter : blur (12px); 
+border : 1px solid  rgba (255 , 255 , 255 , 0.15 ); 
+box-shadow : 0 8px 32px rgba (0, 0, 0, 0.2); 
+} 
+ 
+.btn-primary  { 
+background : rgba (255 , 71, 87, 0.15 ); 
+backdrop -filter : blur (12px); 
+-webkit -backdrop -filter : blur (12px); 
+color : white ; 
+border : 1px solid rgba (255 , 71, 87, 0.3); 
+box-shadow : 0 8px 32px rgba (255 , 71, 87, 0.3); 
+} 
+ 
+.btn-primary :hover  { 
+background : rgba (255 , 71, 87, 0.25 ); 
+transform : translateY (-2px); 
+box-shadow : 0 12 px 40px rgba (255 , 71, 87, 0.5); 
+border -color : rgba (255 , 71, 87, 0.5); 
+} 
+ 
+/* Navbar  */ 
+.navbar { 
+padding : 20px 0; 
+position : fixed ; 
+width : 100 %; 
+top: 0; 
+z-index : 1000 ; 
+background : rgba (30, 30, 46, 0.8); 
+backdrop -filter : blur (10px); 
+border -bottom : 1px solid var(--border -glass ); 
+} 
+ 
+.navbar  .container  { 
+display : flex; 
+justify -content : space -between ; 
+align -items : center ; 
+padding : 0 20px; 
+} 
+.logo  { 
+font -size : 1.8rem ;  
+ 
+ 
+/* Hero  Section  */ 
+.hero { 
+height : 100 vh; 
+display : flex; 
+align -items : center ; 
+padding -top: 80px; 
+position : relative ; 
+overflow : hidden ; 
+} 
+ 
+.hero -content  { 
+display : grid ; 
+grid -template -columns : 1fr 1fr; 
+align -items : center ; 
+gap: 50px; 
+width : 100 %; 
+} 
+.hero -text h1 { 
+font -size : 4rem ; 
+line-height : 1.1; 
+margin -bottom : 20px; 
+} 
+.gradient -text { 
+background : linear -gradient (to right , var(--primary ), #ffa502 , var(--primary )); 
+background -size : 200 % auto ; 
+background -clip: text; 
+-webkit -background -clip: text; 
+-webkit -text-fill-color : transparent ; 
+animation : gradient -flow  3s linear  infinite ; 
+font -weight : 800 ; 
+letter -spacing : 1px; 
+filter : drop -shadow (0 0 10px rgba (255 , 71, 87, 0.3)); 
+} 
+ 
+@keyframes  gradient -flow  { 
+0% { 
+background -position : 0% center ; 
+} 
+ 
+100% { 
+background -position : 200 % center ; 
+} 
+} 
+ 
+.hero -text p { 
+color : var(--text-gray ); 
+margin -bottom : 30px; 
+font -size : 1.1rem ; 
+font -weight : 700; 
+color : var(--text-white ); 
+text-decoration : none ; 
+} 
+.logo .highlight { 
+color : var(--primary ); 
+} line-height : 1.6; 
+max -width : 500 px; 
+} 
+ 
+.hero -image { 
+position : relative ; 
+display : flex; 
+justify -content : center ; 
+} 
+ 
+.circle -bg { 
+position : absolute ; 
+width : 500 px; 
+height : 500 px; 
+background : radial -gradient (circle , rgba (255 , 71, 87, 0.2) 0%, rgba (0, 0, 0, 0) 70%); 
+border -radius : 50%; 
+z-index : -1; 
+} 
+ 
+.floating -img { 
+width : 100%; 
+max -width : 500 px; 
+border -radius : 20px; 
+animation : float  6s ease -in-out infinite ; 
+box-shadow : var(--shadow ); 
+} 
+ 
+@keyframes  float  { 
+ 
+0%, 
+100% { 
+transform : translateY (0); 
+} 
+ 
+50% { 
+transform : translateY (-20px); 
+} 
+} 
+ 
+/* Menu  Section  */ 
+.menu -section { 
+padding : 100 px 0; 
+scroll -margin -top: 100px; 
+} 
+ 
+.section -title { 
+text-align : center ; 
+font -size : 2.5rem ; 
+margin -bottom : 40px; 
+} 
+ 
+.section -title  .highlight  { 
+color : var(--primary ); 
+} 
+ 
+.categories { display : flex; 
+justify -content : center ; 
+gap: 15px; 
+margin -bottom : 50px; 
+flex-wrap : wrap ; 
+} 
+ 
+.cat-btn { 
+padding : 10px 25px; 
+border -radius : 30px; 
+background : rgba (255 , 255 , 255 , 0.05 ); 
+backdrop -filter : blur (10px); 
+-webkit -backdrop -filter : blur (10px); 
+border : 1px solid  rgba (255 , 255 , 255 , 0.1); 
+color : var(--text-gray ); 
+cursor : pointer ; 
+transition : var(--transition ); 
+} 
+ 
+.cat-btn:hover , 
+.cat-btn.active  { 
+background : rgba (255 , 71, 87, 0.15 ); 
+backdrop -filter : blur (12px); 
+-webkit -backdrop -filter : blur (12px); 
+color : white ; 
+border -color : rgba (255 , 71, 87, 0.3); 
+box-shadow : 0 5px 15px rgba (255 , 71, 87, 0.3); 
+} 
+ 
+@media  (max -width : 768 px) { 
+.categories { 
+gap: 10px; 
+padding : 0 10px; 
+} 
+ 
+.cat-btn { 
+padding : 8px 18px; 
+font -size : 0.9rem ; 
+flex: 1 1 auto ; 
+min -width : 100px; 
+} 
+} 
+ 
+.menu -grid { 
+display : grid ; 
+grid -template -columns : repeat (auto -fit, minmax (280 px, 1fr)); 
+gap: 30px; 
+} 
+ 
+.food -card  { 
+background : var(--bg-card ); 
+border : 1px solid  var(--border -glass ); 
+border -radius : 20px; 
+padding : 20px; 
+transition : var(--transition ); 
+position : relative ; 
+overflow : hidden ; } 
+ 
+.food -card :hover  { 
+transform : translateY (-10px); 
+box-shadow : var(--shadow ); 
+border -color : rgba (255 , 71, 87, 0.3); 
+} 
+font -size : 1.3rem ; 
+font -weight : 700 ; 
+color : var(--primary ); 
+} 
+ 
+.add-btn { 
+padding : 10px 20px; 
+border -radius : 25px; 
+border : none ; 
+background : rgba (255 , 255 , 255 , 0.08 ); 
+backdrop -filter : blur (10px); 
+-webkit -backdrop -filter : blur (10px); 
+border : 1px solid  rgba (255 , 255 , 255 , 0.15 ); 
+color : var(--text-white ); 
+cursor : pointer ; 
+transition : var(--transition ); 
+display : flex; 
+align -items : center ; 
+justify -content : center ; 
+gap: 8px; 
+font -size : 0.9rem ; 
+font -weight : 600; 
+width : 100 %; 
+margin -top: 15px; 
+} 
+ 
+.add-btn i { 
+font -size : 1rem ; 
+} 
+ 
+.add-btn:hover  { 
+background : rgba (255 , 71, 87, 0.2); 
+backdrop -filter : blur (12px); 
+-webkit -backdrop -filter : blur (12px); 
+border -color : var(--primary ); 
+transform : translateY (-2px); 
+box-shadow : 0 5px 15px rgba (255 , 71, 87, 0.4); 
+} 
+ 
+.add-btn.added { 
+background : rgba (34, 197 , 94, 0.2); 
+border -color : rgba (34, 197 , 94, 0.4); 
+color : #22c55e ; 
+} 
+ 
+.add-btn.added :hover { 
+background : rgba (34, 197 , 94, 0.3); 
+border -color : rgba (34, 197 , 94, 0.5); 
+transform : translateY (-2px); 
+box-shadow : 0 5px 15px rgba (34, 197 , 94, 0.4); } 
+ 
+/* Cart  Sidebar  */ 
+.cart -sidebar { 
+position : fixed ; 
+top: 0; 
+right : -400 px; 
+width : 350 px; 
+height : 100%; 
+background : var(--bg-card ); 
+z-index : 2000 ; 
+transition : var(--transition ); 
+padding : 30px; 
+display : flex; 
+flex-direction : column ; 
+box-shadow : -10px 0 30 px rgba (0, 0, 0, 0.5); 
+} 
+ 
+.cart -sidebar .open  { 
+right : 0; 
+} 
+ 
+.cart -header  { 
+display : flex; 
+justify -content : space -between ; 
+align -items : center ; 
+margin -bottom : 30px; 
+padding -bottom : 15px; 
+border -bottom : 1px solid var(--border -glass ); 
+} 
+ 
+.close -cart  { 
+background : none ; 
+border : none ; 
+color : var(--text-white ); 
+font -size : 1.5rem ; 
+cursor : pointer ; 
+} 
+ 
+.cart -items { 
+flex-grow : 1; 
+overflow -y: auto ; 
+} 
+ 
+.cart -item { 
+display : flex; 
+gap: 15px; 
+margin -bottom : 20px; 
+align -items : center ; 
+} 
+ 
+.cart -item  img { 
+width : 60px; 
+height : 60px; 
+border -radius : 10px; 
+object -fit: cover ; 
+}  
+.cart -item -info  { 
+flex-grow : 1; 
+} 
+ 
+.cart -item h4 { 
+font -size : 1rem ; 
+margin -bottom : 5px; 
+} 
+ 
+.cart -item -price { 
+color : var(--primary ); 
+font -size : 0.9rem ; 
+} 
+ 
+.remove -item  { 
+background : none ; 
+border : none ; 
+color : var(--text-gray ); 
+cursor : pointer ; 
+font -size : 0.9rem ; 
+} 
+ 
+.remove -item :hover { 
+color : var(--primary ); 
+} 
+ 
+.cart -footer { 
+padding -top: 20px; 
+border -top: 1px solid  var(--border -glass ); 
+} 
+ 
+.total { 
+display : flex; 
+justify -content : space -between ; 
+font -size : 1.2rem ; 
+font -weight : 700 ; 
+margin -bottom : 20px; 
+} 
+ 
+.btn-block { 
+width : 100 %; 
+text-align : center ; 
+} 
+ 
+.overlay  { 
+position : fixed ; 
+top: 0; 
+left: 0; 
+width : 100%; 
+height : 100%; 
+background : rgba (0, 0, 0, 0.7); 
+z-index : 1500 ; 
+opacity : 0; 
+visibility : hidden ; 
+transition : var(--transition ); 
+backdrop -filter : blur (5px); } 
+ 
+.overlay .active { 
+opacity : 1; 
+visibility : visible ; 
+} 
+ 
+/* Responsive  */ 
+@media  (max -width : 768 px) { 
+.navbar { 
+padding : 10px 0; 
+} 
+ 
+.navbar  .container  { 
+gap: 10px; 
+padding : 0 15 px; 
+} 
+ 
+.logo  { 
+font -size : 1.4rem ; 
+} 
+ 
+.nav-links { 
+display : none ; 
+} 
+ 
+/* Search  Bar - hide  on mobile  */ 
+.search -bar { 
+display : none ; 
+} 
+ 
+/* Hide  login  text on mobile,  just show  icon  if we had one, 
+but since  it's a button,  let's  just make  it smaller  or hide  it if needed.  
+For now, let' s keep it but reduce padding */  
+.btn-primary  { 
+padding : 8px 15px !important ; 
+font -size : 0.8rem !important ; 
+} 
+ 
+#nav-auth -btn { 
+margin -left: 10px !important ; 
+} 
+ 
+.user -profile  span  { 
+display : none ; 
+/* Hide  user  name  on mobile,  show  only icon/avatar */ 
+} 
+ 
+.nav-icons  { 
+gap: 15px; 
+} 
+} 
+ 
+@media  (max -width : 480 px) { 
+ 
+/* On very  small  screens,  maybe  hide  search  bar placehoder  or just show  icon?  For now,  let's  shrink  logo  and search  further  */ 
+.logo  { 
+font -size : 1.2rem ; 
+} 
+ 
+.search -bar { 
+padding : 8px 10px; 
+} 
+ 
+.search -bar input ::placeholder  { 
+color : transparent ; 
+/* visually  hide  placeholder  text to save  space  */ 
+} 
+} 
+ 
+@media  (max -width : 768 px) { 
+.hero { 
+background : linear -gradient (rgba (15, 23, 42, 0.7), rgba (15, 23, 42, 0.7)), url('./images/mobile -bg.jpg '); 
+background -repeat : no-repeat ; 
+background -position : center ; 
+background -size : cover ; 
+} 
+ 
+.hero -start -overlay  { 
+position : absolute ; 
+top: 0; 
+left: 0; 
+width : 100%; 
+height : 100%; 
+background : rgba (15, 23, 42, 0.7); 
+/* Dark  overlay  to readability  */ 
+z-index : -1; 
+} 
+ 
+.hero -content  { 
+grid -template -columns : 1fr; 
+text-align : center ; 
+gap: 30px; 
+} 
+ 
+.hero -text h1 { 
+font -size : 2.8rem ; 
+} 
+ 
+.hero -text p { 
+font -size : 1rem ; 
+margin : 0 auto 25px; 
+} 
+ 
+.hero -image { 
+display : none ; 
+} 
+} 
+ 
+@media  (max -width : 480 px) { 
+.hero -text h1 { 
+font -size : 2.2rem ; } 
+ 
+.section -title { 
+font -size : 2rem ; 
+} 
+} 
+ 
+/* Typewriter  Cursor  */ 
+.cursor { 
+display : inline -block ; 
+width : 3px; 
+background -color : var(--primary ); 
+animation : blink 1s infinite ; 
+margin -left: 2px; 
+vertical -align : text-bottom ; 
+} 
+ 
+@keyframes  blink { 
+ 
+0%, 
+100% { 
+opacity : 1; 
+} 
+ 
+50% { 
+opacity : 0; 
+} 
+} 
+ 
+/* About  Page  Styles  */ 
+.about -hero  { 
+padding : 150 px 0 80px; 
+text-align : center ; 
+background : radial -gradient (circle at top, rgba (255 , 71, 87, 0.1), transparent ); 
+} 
+ 
+.about -hero h1 { 
+font -size : 3.5rem ; 
+margin -bottom : 20px; 
+} 
+ 
+.about -section { 
+padding : 80px 0; 
+} 
+ 
+.about -grid { 
+display : grid ; 
+grid -template -columns : 1fr 1fr; 
+gap: 50px; 
+align -items : center ; 
+} 
+ 
+.about -image { 
+position : relative ; 
+} .about -image  img { 
+width : 100 %; 
+.value -card i { 
+font -size : 2.5rem ; 
+color : var(--primary ); 
+margin -bottom : 20px; 
+} 
+ 
+@media  (max -width : 768 px) { 
+.about -grid  { 
+grid -template -columns : 1fr; 
+} 
+} 
+ 
+/* User  Profile  & Auth  Nav */ 
+.user -profile  { 
+display : flex; 
+align -items : center ; 
+background : rgba (255 , 255 , 255 , 0.05 ); 
+padding : 8px 16px; 
+border -radius : 50px; 
+border : 1px solid  var(--border -glass ); 
+transition : var(--transition ); 
+} 
+ 
+.user -profile :hover  { 
+background : rgba (255 , 71, 87, 0.1); 
+border -color : var(--primary ); 
+transform : translateY (-2px); 
+box-shadow : 0 5px 15px rgba (255 , 71, 87, 0.2); 
+} 
+ 
+.user -profile i { 
+font -size : 1.1rem ; 
+} 
+ 
+#nav-auth -btn { 
+display : flex; 
+align -items : center ; 
+} 
+ 
+/* Contact  Page  Styles  */ 
+.contact -hero  { 
+padding : 150 px 0 80px; 
+text-align : center ; 
+background : radial -gradient (circle at top, rgba (255 , 71, 87, 0.1), transparent ); 
+} 
+ 
+.contact -hero h1 { 
+font -size : 3.5rem ; 
+margin -bottom : 20px; 
+} 
+ 
+.contact -section  { 
+padding : 50px 0 100 px; 
+} .contact -grid  { 
+display : grid ; 
+grid -template -columns : 1fr 1fr; 
+gap: 50px; 
+align -items : start ; 
+} 
+ 
+.contact -info  { 
+padding -right : 30px; 
+} 
+ 
+.info -text { 
+color : var(--text-gray ); 
+margin -bottom : 40px; 
+line-height : 1.6; 
+} 
+ 
+.info -item { 
+display : flex; 
+gap: 20px; 
+margin -bottom : 30px; 
+align -items : center ; 
+} 
+ 
+.info -item i { 
+width : 50px; 
+height : 50px; 
+background : var(--glass ); 
+border -radius : 50%; 
+display : flex; 
+align -items : center ; 
+justify -content : center ; 
+color : var(--primary ); 
+font -size : 1.2rem ; 
+border : 1px solid  var(--border -glass ); 
+} 
+ 
+.info -item h4 { 
+font -size : 1.1rem ; 
+margin -bottom : 5px; 
+} 
+ 
+.info -item  p { 
+color : var(--text-gray ); 
+} 
+ 
+.contact -form -wrapper { 
+background : var(--bg-card ); 
+padding : 40px; 
+border -radius : 20px; 
+border : 1px solid  var(--border -glass ); 
+box-shadow : var(--shadow ); 
+} 
+ 
+.form -title  { 
+margin -bottom : 30px; 
+font -size : 1.8rem ; } 
+ 
+.form -group  { 
+margin -bottom : 25px; 
+} 
+ 
+.form -group  input , 
+.form -group  textarea  { 
+width : 100 %; 
+padding : 16px; 
+background : rgba (255 , 255 , 255 , 0.03 ); 
+backdrop -filter : blur (10px); 
+-webkit -backdrop -filter : blur (10px); 
+border : 1px solid  rgba (255 , 255 , 255 , 0.1); 
+border -radius : 12px; 
+color : var(--text-white ); 
+font -size : 1rem ; 
+transition : var(--transition ); 
+display : block ; 
+} 
+ 
+.form -group  input :focus , 
+.form -group  textarea :focus  { 
+outline : none ; 
+border -color : var(--primary ); 
+background : rgba (255 , 255 , 255 , 0.08 ); 
+box-shadow : 0 0 15 px rgba (255 , 71, 87, 0.2); 
+} 
+ 
+.social -section  { 
+padding : 0 0 100 px; 
+text-align : center ; 
+} 
+ 
+.social -icons  { 
+display : flex; 
+justify -content : center ; 
+gap: 25px; 
+margin -top: 40px; 
+} 
+ 
+.social -icon  { 
+width : 70px; 
+height : 70px; 
+border -radius : 50%; 
+background : rgba (255 , 255 , 255 , 0.05 ); 
+backdrop -filter : blur (8px); 
+-webkit -backdrop -filter : blur (8px); 
+border : 1px solid  rgba (255 , 255 , 255 , 0.1); 
+display : flex; 
+align -items : center ; 
+justify -content : center ; 
+color : var(--text-white ); 
+font -size : 1.8rem ; 
+transition : var(--transition ); 
+text-decoration : none ; 
+}  
+.social -icon :hover  { 
+transform : translateY (-8px) scale (1.1); 
+color : white ; 
+} 
+ 
+/* Social  Brand  Colors */ 
+.social -icon .facebook :hover { 
+background : rgba (24, 119 , 242 , 0.2); 
+border -color : #1877f2 ; 
+box-shadow : 0 10 px 25px rgba (24, 119 , 242 , 0.4); 
+} 
+ 
+.social -icon .twitter :hover  { 
+background : rgba (29, 161 , 242 , 0.2); 
+border -color : #1da1f2 ; 
+box-shadow : 0 10 px 25px rgba (29, 161 , 242 , 0.4); 
+} 
+ 
+.social -icon .instagram :hover { 
+background : rgba (228 , 64, 95, 0.2); 
+border -color : #e4405f ; 
+box-shadow : 0 10 px 25px rgba (228 , 64, 95, 0.4); 
+} 
+ 
+.social -icon .linkedin :hover { 
+background : rgba (10, 102 , 194 , 0.2); 
+border -color : #0a66c2 ; 
+box-shadow : 0 10 px 25px rgba (10, 102 , 194 , 0.4); 
+} 
+ 
+@media  (max -width : 768 px) { 
+.contact -grid  { 
+grid -template -columns : 1fr; 
+} 
+} 
+ 
+/* Search  Bar Styles  (Restored  & Refined)  */ 
+.nav-middle  { 
+/* flex-grow:  1; */ 
+display : flex; 
+justify -content : center ; 
+} 
+ 
+.search -bar { 
+position : relative ; 
+width : 100 %; 
+max -width : 400 px; 
+background : #252538 ; 
+/* Dark/solid  bg as per  image  */ 
+border : 1px solid  rgba (255 , 255 , 255 , 0.1); 
+border -radius : 50px; 
+padding : 12px 20px; 
+display : flex; 11. DESIGNING  
+The design  follows  a "Dark  Mode"  aesthetic  which  is popular  in modern  applications  for 
+reducing eye strain and increasing visual appeal of food images.  
+Key Design  Elements:  
+ Gradient  Text: Used  on headings  for emphasis.  
+ Glassmorphism:  Translucent  backgrounds  on cards  and navigation  to give a depth 
+effect.  
+ Floating  Animations:  Images  in the hero section  float to create  a dynamic  feel. 
+ 
+ 
+ 
+12. USER  MANUAL  
+1. Open  the Website: Navigate  to the hosted  URL.  
+2. Sign  Up: Click  on the Login  icon or "Order  Now"  to be prompted  for authentication  if 
+not logged in. Navigate to "Sign Up" tab.  
+3. Browse  Menu:  Use the category  buttons  (Burger,  Pizza,  etc.) to filter items.  
+4. Add to Cart: Click  "Add"  on any item.  It will appear  in the  cart icon count.  
+5. Checkout:  Open  the cart sidebar  and click "Checkout".  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13. OUTPUT  SCREEN  
+Below  are the screenshots  of the working  application.  Home  Page  
+ Menu  Section  
+ Login  / Signup  Page  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+14. OUTPUT  REPORTS  
+Since  this is a client -side project,  reports  are generated  in the form of User  Feedback  confirmation  and Order  Summary  shown  in the checkout  alert.  
+ 
+ 
+ 
+15. COMMON  ERRORS  AND  EXPLANATIONS  
+ 404 Not Found: Occurs  if the hosting  URL is incorrect.  Solution:  Check  the GitHub 
+Pages settings. 
+ Images  not loading: Caused  by incorrect  file paths.  Solution:  Used  relative  paths 
+(e.g., ./images/). 
+ Form  Validation  Error:  If password  is too weak.  Solution:  Follow  the helper's  text 
+instructions carefully. 
+16. LIMITATIONS  
+ No Backend:  Data  is stored  in the browser's Local  Storage,  so it is lost if the cache 
+is cleared or a different device is used. 
+ Static  Menu:  The menu  items  are hardcoded  in JavaScript;  there  is no Admin 
+Panel to add new items dynamically without code changes. 
+ 
+ 
+17. FUTURE  ENHANCEMENT  / CONCLUSION  
+Conclusion: The project successfully demonstrates a modern, responsive frontend for a 
+food delivery service. It meets all functional requirements for a minor project.  
+Current  Published  URL:  https://avinash.github.io/Food -oder -app-avi/index.html  
+Future  Enhancements:  
+ Integration  with a backend  (Node.js/Express)  and Database  (MongoDB). 
+ Real-time payment  gateway  integration  (Stripe/Razorpay). 
+ Admin  Dashboard  for restaurant  owners  to manage  orders.
+ 
+18. BIBLIOGRAPHY  
+ MDN  Web  Docs  - https://developer.mozilla.org 
+ W3Schools  - https://www.w3schools.com 
+ Stack  Overflow - https://stackoverflow.com 
+ Google  Fonts  - https://fonts.google.com 
